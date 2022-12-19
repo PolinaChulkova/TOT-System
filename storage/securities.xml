@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<data id="securities">
+<metadata>
+<columns>
+<column name="id" type="int32" />
+<column name="secid" type="string" bytes="51" max_size="0" />
+<column name="shortname" type="string" bytes="189" max_size="0" />
+<column name="regnumber" type="string" bytes="189" max_size="0" />
+<column name="name" type="string" bytes="765" max_size="0" />
+<column name="isin" type="string" bytes="765" max_size="0" />
+<column name="is_traded" type="int32" />
+<column name="emitent_id" type="int32" />
+<column name="emitent_title" type="string" bytes="765" max_size="0" />
+<column name="emitent_inn" type="string" bytes="30" max_size="0" />
+<column name="emitent_okpo" type="string" bytes="24" max_size="0" />
+<column name="gosreg" type="string" bytes="189" max_size="0" />
+<column name="type" type="string" bytes="93" max_size="0" />
+<column name="group" type="string" bytes="93" max_size="0" />
+<column name="primary_boardid" type="string" bytes="12" max_size="0" />
+<column name="marketprice_boardid" type="string" bytes="12" max_size="0" />
+</columns>
+</metadata>
+<rows>
+<row id="414943325" secid="A-RM" shortname="AgilentTec" regnumber="" name="Agilent TechnologiesORD SHS" isin="US00846U1016" is_traded="1" emitent_id="1376417" emitent_title="Agilent Technologies, Inc." emitent_inn="0000006246" emitent_okpo="" gosreg="" type="common_share" group="stock_shares" primary_boardid="FQBR" marketprice_boardid="FQBR" />
+<row id="414220919" secid="AA-RM" shortname="Alcoa" regnumber="" name="Alcoa Corporation" isin="US0138721065" is_traded="1" emitent_id="1375753" emitent_title="Alcoa Corporation (Алкоа Корпорэйшн)" emitent_inn="0000005270" emitent_okpo="" gosreg="" type="common_share" group="stock_shares" primary_boardid="FQBR" marketprice_boardid="FQBR" />
+<row id="412223567" secid="AAL-RM" shortname="AmAirlines" regnumber="" name="American Airlines Group Inc." isin="US02376R1023" is_traded="1" emitent_id="1375083" emitent_title="American Airlines Group Inc." emitent_inn="0000004968" emitent_okpo="" gosreg="" type="common_share" group="stock_shares" primary_boardid="FQBR" marketprice_boardid="FQBR" />
+<row id="415380933" secid="AAP-RM" shortname="AdvanceAut" regnumber="" name="ADVANCE AUTO PARTS, INC ORDSHS" isin="US00751Y1064" is_traded="1" emitent_id="1376743" emitent_title="Advance Auto Parts, Inc." emitent_inn="0000006353" emitent_okpo="" gosreg="" type="common_share" group="stock_shares" primary_boardid="FQBR" marketprice_boardid="FQBR" />
+<row id="411886643" secid="AAPL-RM" shortname="Apple" regnumber="" name="Apple Inc." isin="US0378331005" is_traded="1" emitent_id="1281003" emitent_title="Apple Inc" emitent_inn="" emitent_okpo="" gosreg="" type="common_share" group="stock_shares" primary_boardid="FQBR" marketprice_boardid="FQBR" />
+<row id="412223569" secid="ABBV-RM" shortname="AbbVie" regnumber="" name="AbbVie Inc." isin="US00287Y1091" is_traded="1" emitent_id="1375081" emitent_title="AbbVie Inc." emitent_inn="0000004967" emitent_okpo="" gosreg="" type="common_share" group="stock_shares" primary_boardid="FQBR" marketprice_boardid="FQBR" />
+<row id="414943327" secid="ABC-RM" shortname="AmerisouBn" regnumber="" name="AmerisourceBergen CorpORD SHS" isin="US03073E1055" is_traded="1" emitent_id="1376471" emitent_title="AmerisourceBergen Corporation" emitent_inn="0000006273" emitent_okpo="" gosreg="" type="common_share" group="stock_shares" primary_boardid="FQBR" marketprice_boardid="FQBR" />
+<row id="414458915" secid="ABMD-RM" shortname="ABIOMED" regnumber="" name="ABIOMED Ord Shs" isin="US0036541003" is_traded="1" emitent_id="1375865" emitent_title="ABIOMED, Inc." emitent_inn="0000006096" emitent_okpo="" gosreg="" type="common_share" group="stock_shares" primary_boardid="FQBR" marketprice_boardid="FQBR" />
+<row id="415380935" secid="ABNB-RM" shortname="Airbnb A" regnumber="" name="Airbnb, Inc. ORD SHS CL A" isin="US0090661010" is_traded="1" emitent_id="1376615" emitent_title="Airbnb, Inc." emitent_inn="0000006289" emitent_okpo="" gosreg="" type="common_share" group="stock_shares" primary_boardid="FQBR" marketprice_boardid="FQBR" />
+<row id="12441" secid="ABRD" shortname="АбрауДюрсо" regnumber="1-02-12500-A" name="Абрау-Дюрсо ПАО ао" isin="RU000A0JS5T7" is_traded="1" emitent_id="2556" emitent_title="Публичное акционерное общество &quot;Абрау – Дюрсо&quot;" emitent_inn="7727620673" emitent_okpo="81521198" gosreg="1-02-12500-A" type="common_share" group="stock_shares" primary_boardid="TQBR" marketprice_boardid="TQBR" />
+</rows>
+</data>
+</document>
