@@ -1,0 +1,1 @@
+ALTER TABLE public.trading_histories ADD COLUMN close double precision;

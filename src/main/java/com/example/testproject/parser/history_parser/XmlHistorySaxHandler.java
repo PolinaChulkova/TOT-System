@@ -40,6 +40,11 @@ public class XmlHistorySaxHandler extends DefaultHandler {
                 history.setOpen(Double.valueOf(open));
             } else history.setOpen(0.0);
 
+            String close = attributes.getValue("CLOSE");
+            if (close != null && close.length() != 0) {
+                history.setClose(Double.valueOf(close));
+            } else history.setClose(0.0);
+
 
             if (history != null) tradingHistories.add(history);
         }

@@ -1,5 +1,6 @@
 package com.example.testproject.service;
 
+import com.example.testproject.dto.SummaryData;
 import com.example.testproject.dto.TradingHistoryDto;
 import com.example.testproject.model.Security;
 import com.example.testproject.model.TradingHistory;
@@ -30,6 +31,12 @@ public class TradingHistoryService {
     private final TradingHistoryRepo tradingHistoryRepo;
     private final SecurityService securityService;
     private final XmlTradeHistoryParser parser;
+
+    public SummaryData getSummaryDate(String secId, LocalDate date) {
+        TradingHistory history = findBySecIdAndTradeDate(secId, date);
+        Security security = securityService.findBySecId(secId);
+        return new SummaryData(security, history);
+    }
 
     /**
      * Добавление истории торгов в БД (если история отсутствует, то выполяется запрос к бирже)
@@ -91,6 +98,7 @@ public class TradingHistoryService {
         history.setTradeDate(dto.getTradeDate());
         history.setNumTrades(dto.getNumTrades());
         history.setOpen(dto.getOpen());
+        history.setClose(dto.getClose());
 
         return tradingHistoryRepo.save(history);
     }

@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDate;
 
 @Entity
@@ -14,7 +15,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Getter
 @Setter
-public class TradingHistory {
+public class TradingHistory implements Serializable {
     @Id
     @Column(name = "sec_id")
     private String secId;
@@ -26,6 +27,9 @@ public class TradingHistory {
     @Column(name = "open")
     private Double open;
 
+    @Column(name = "close")
+    private Double close;
+
     @ManyToOne
     @JoinColumn(name = "sec_id", referencedColumnName = "sec_id",
             insertable = false, updatable = false)
@@ -36,13 +40,13 @@ public class TradingHistory {
         this.tradeDate = dto.getTradeDate();
         this.numTrades = dto.getNumTrades();
         this.open = dto.getOpen();
+        this.close = dto.getClose();
     }
 
-    public TradingHistory(String secId, LocalDate tradeDate, Long numTrades, Double open, Security security) {
-        this.secId = secId;
+    public TradingHistory(LocalDate tradeDate, Long numTrades, Double open, Double close) {
         this.tradeDate = tradeDate;
         this.numTrades = numTrades;
         this.open = open;
-        this.security = security;
+        this.close = close;
     }
 }

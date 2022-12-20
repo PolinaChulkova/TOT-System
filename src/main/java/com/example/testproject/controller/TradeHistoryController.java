@@ -20,6 +20,12 @@ public class TradeHistoryController {
 
     private final TradingHistoryService tradingHistoryService;
 
+    @GetMapping("/summary")
+    public ResponseEntity<?> getSummaryDate(@RequestParam("secId") String secId,
+                                            @RequestParam("date") String date) {
+        return ResponseEntity.ok().body(tradingHistoryService.getSummaryDate(secId, LocalDate.parse(date)));
+    }
+
     /**
      * Загрузка истории торгов по дате из XML файла
      */
