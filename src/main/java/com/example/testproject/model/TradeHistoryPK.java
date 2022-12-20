@@ -6,6 +6,9 @@ import javax.persistence.Embeddable;
 import java.io.Serializable;
 import java.time.LocalDate;
 
+/**
+ * Составной первичный ключ для TradingHistory
+ */
 @Embeddable
 @Data
 public class TradeHistoryPK implements Serializable {
